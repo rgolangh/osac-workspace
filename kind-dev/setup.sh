@@ -41,7 +41,7 @@
 
 set -euo pipefail
 
-SCRIPT_DIR="$(realpath "$(dirname "${BASH_SOURCE[0]}")")"
+SCRIPT_DIR="$(dirname "$(realpath "${BASH_SOURCE[0]}")")"
 WORKSPACE_DIR="$(realpath "${SCRIPT_DIR}/..")"
 
 # Configuration

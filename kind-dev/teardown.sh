@@ -20,7 +20,7 @@ for arg in "$@"; do
   esac
 done
 
-SCRIPT_DIR="$(realpath "$(dirname "${BASH_SOURCE[0]}")")"
+SCRIPT_DIR="$(dirname "$(realpath "${BASH_SOURCE[0]}")")"
 
 # Source runtime detection, kind_cmd(), and helpers (log, err, etc.) from setup.sh
 # shellcheck source=setup.sh
